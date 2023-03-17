@@ -47,8 +47,7 @@ trait ResponseTrait
     protected function respondWithToken($token, $user = null)
     {
         $data = [
-            'access_token' => $token,
-            'token_type' => 'Bearer',
+            'token' => $token,
             'user' => $user
         ];
 
